@@ -1,0 +1,300 @@
+/* 左半部文章內容 */
+.article_content{
+    width: 100%;
+}
+
+.article_text{
+    text-align: center;
+    padding: 80px 0 20px 0;
+}
+
+.article_text p{
+    color: #929292;
+}
+/* 影片 */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    }
+    
+    .video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;}
+
+.description{
+    color: #929292;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+/* 內文 */
+.content{
+    /* display: inline-block; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content h5{
+    padding: 20px 0;
+    color: #929292;
+    line-height: 2rem;
+}
+
+.content img{
+    width: 100%;
+}
+
+.sub_title{
+    display: flex;
+    padding: 20px 0 20px 0;
+}
+
+.sub_box{
+    width: 20px;
+    height: 40px;
+    background-color: #f79584;
+    margin: 0 10px 0 12px;
+}
+
+/* 底部按鈕 */
+.btns{
+    margin-left: 20px;
+    /* display: flex; */
+    margin-bottom: 150px;
+}
+
+.l-btn button{
+    border-radius: 10px;
+    width: 280px;
+    margin-right: 20px;
+    height: 80px;
+    box-shadow: 0 15px 20px #cacaca;
+}
+
+.r-btn{
+    margin-left: 290px;
+    margin-top: 20px;
+}
+
+.r-btn a{
+    color: #929292;
+    
+}
+
+.r-btn img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* 右半部文章推薦 */
+.news_part{
+    margin-top: 1500px;
+    width: 100%;
+    height: 2500px;
+    background-color: #242e532a;
+    border-radius: 20px;
+}
+
+.main_news i{
+    display: inline-block;
+    color: #f79584;
+    font-size: 90px;
+    margin-left: 430px;
+}
+
+.recent_text{
+    color: #454545;
+    padding: 0 0 10px 50px;
+}
+
+.recent_card{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 90px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px #cacaca;
+    margin-bottom: 10px;
+}
+
+.recent_card img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin: 10px 0 0 30px;
+}
+
+.recent_card h5{
+    color: #929292;
+    padding: 30px 0 0 10px;
+}
+
+
+/* 新聞列表 */
+.other_news{
+    margin-top: 60px;
+}
+
+.news_card{
+    background-color: #ffffff80;
+    width: 450px;
+    height: 580px;
+    display:block;
+    margin:20px auto;
+}
+
+.news_card h4{
+    padding-top: 10px;
+    text-align: center;
+    line-height: 36px;
+    color: #454545;
+}
+
+.news_card img{
+    width: 100%;
+}
+
+.news_card_text p{
+    display: inline-block;
+    width: 450px;
+    padding: 20px 20px 0 20px;
+    color: #888888;
+} */
+
+/* 日曆 */
+.review_card{
+    display:block;
+    margin:20px auto;
+    width: 450px;
+    height: 400px;
+    background-color: #ffffff80;
+    border-radius: 20px;
+}
+
+.review_card h4{
+    color: #9393a2;
+    padding: 10px 0 0 20px;
+}
+
+* {box-sizing:border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana,sans-serif;}
+
+.month {
+    padding: 20px 25px;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ffffff;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #9393a2;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 10px;
+    background: #ffffff;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 15px 10px;
+    font-size:16px;
+    background: #9393a2;
+    color:white;
+    border-radius: 5px;
+}
+
+li.active {
+    /* padding: 5px; */
+    background: #f79584;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:1920px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+/* 搜尋欄 */
+.search{
+    width: 450px;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.52);
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #cacaca;
+}
+
+.search h4{
+    padding: 20px 10px 20px 50px;
+}
+
+.search hr{
+    margin-top: 35px;
+}
+
+.search i{
+    color: black;
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.search form{
+    margin: 0 0 20px 40px;
+}
+
+/* #search input[type=text]{
+    width: 200px !important;
+} */
+
+
