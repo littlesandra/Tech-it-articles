@@ -138,7 +138,7 @@
 
 /* 新聞列表 */
 .other_news{
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .news_card{
@@ -255,6 +255,7 @@ li.active {
     /* padding: 5px; */
     background: #f79584;
 }
+
 
 /* Add media queries for smaller screens */
 @media screen and (max-width:1920px) {

@@ -84,7 +84,7 @@
 }
 
 .news_card h4{
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: center;
     line-height: 36px;
     color: #454545;
@@ -104,16 +104,17 @@
 /* 日曆 */
 .review_card{
     display:block;
-    margin:20px auto;
-    width: 450px;
-    height: 400px;
-    background-color: #ffffff80;
+    margin: 20px auto;
+    width: 80%;
+    height: 360px;
+    background-color: #ffffff;
     border-radius: 20px;
 }
 
 .review_card h4{
     color: #9393a2;
     padding: 10px 0 0 20px;
+    margin: 0 auto;
 }
 
 * {box-sizing:border-box;}
@@ -121,9 +122,11 @@ ul {list-style-type: none;}
 body {font-family: Verdana,sans-serif;}
 
 .month {
-    padding: 20px 25px;
-    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
     background: #FFFFFF;
+    
 }
 
 .month ul {
@@ -133,32 +136,34 @@ body {font-family: Verdana,sans-serif;}
 
 .month ul li {
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 .month .prev {
     float: left;
-    padding-top: 10px;
+    /* padding-top: 0px; */
 }
 
 .month .next {
     float: right;
-    padding-top: 10px;
+    /* padding-top: 10px; */
 }
 
 .weekdays {
+    width: 90%;
     margin: 0;
-    padding: 10px 0;
+    padding: 1px 0;
     background-color: #ffffff;
 }
 
 .weekdays li {
     display: inline-block;
-    width: 13.6%;
+    width: 12%;
     color: #9393a2;
     text-align: center;
+    padding-left: 6px;
 }
 
 .days {
@@ -170,11 +175,11 @@ body {font-family: Verdana,sans-serif;}
 .days li {
     list-style-type: none;
     display: inline-block;
-    width: 13.6%;
+    width: 12%;
     text-align: center;
     margin-bottom: 5px;
-    padding: 15px 10px;
-    font-size:16px;
+    padding: 10px 10px;
+    font-size:12px;
     background: #9393a2;
     color:white;
     border-radius: 5px;
@@ -185,7 +190,7 @@ li.active {
     background: #f79584;
 }
 
-Add media queries for smaller screens
+/* Add media queries for smaller screens */
 @media screen and (max-width:1920px) {
     .weekdays li, .days li {width: 13.1%;}
 }
@@ -217,7 +222,7 @@ Add media queries for smaller screens
     display: block;
     width: 300px;
     color: #dedede;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .layer_text h4{
@@ -268,7 +273,7 @@ Add media queries for smaller screens
     display: block;
     width: 280px;
     color: #dedede;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .layer_text_down h5{
